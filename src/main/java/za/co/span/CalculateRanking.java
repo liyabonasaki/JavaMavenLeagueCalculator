@@ -44,12 +44,13 @@ public class CalculateRanking {
             team2.setPoints(loose);
 
         }
-        addingTeamsPointToList();
+
     }
 
 
 
     public ArrayList<Teams> addingTeamsPointToList(){
+        System.out.println("====== Results of a Match of 2 Teams =======\n");
         teamsDB.add(team1);
         teamsDB.add(team2);
         return teamsDB;

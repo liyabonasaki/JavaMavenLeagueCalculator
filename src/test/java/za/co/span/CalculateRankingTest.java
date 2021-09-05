@@ -24,14 +24,16 @@ class CalculateRankingTest {
 
     @Test
     void calculatePointsTest() {
+
         calculateRanking.calculatePoints("Lions",3,"Snakes",3);
         calculateRanking.calculatePoints("Tarantulas",1,"FC Awesome",0);
         calculateRanking.calculatePoints("Lions",1,"FC Awesome",1);
         calculateRanking.calculatePoints("Tarantulas",3,"Snakes",1);
         calculateRanking.calculatePoints("Lions",4,"Grouches",0);
+        assertNotNull(calculateRanking.team1);
+        assertNotNull(calculateRanking.team2);
 
-
-        System.out.println( calculateRanking.addingTeamsPointToList());
+        System.out.println(calculateRanking.addingTeamsPointToList());
 
 
     }
