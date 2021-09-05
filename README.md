@@ -2,10 +2,12 @@
 
 #RUNNING THE APPLICATION ON CLI
   
-  -install maven first
+  -install maven first using the setup_maven.sh script
   -install java 8 or later
-  -clone the repo -> git clone 
+  -clone the repo -> git clone https://github.com/liyabonasaki/JavaMavenLeagueCalculator.git 
   navigate to the target folder
+
+  Running it as a jar file
   mvn package install;
   cd target;
-  java -cp myApp-0.0.1-SNAPSHOT.jar mypackage.MyClass
+  java -jar leagueTableCalculator.jar

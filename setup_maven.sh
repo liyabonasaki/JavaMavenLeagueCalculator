@@ -2,10 +2,11 @@
 
 # Author: Liyabona Saki
 # Version: 1.0
-#Description : this script it to assist in setting up maven as the application uses maven as its dependancy management
+#Description : this script to setup maven as the application uses maven as its dependency management
 
 #DO NOT MODIFY
 function RUNNING_CHECK() {
+# its always good having running checks to maintain computer resources
   pgrep -x run.sh >/dev/null && echo "Process found" || echo "Process not found"
 
 }

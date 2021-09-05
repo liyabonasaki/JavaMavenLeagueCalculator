@@ -1,8 +1,13 @@
+/*
+@Author : Liyabona Saki
+@Version : 1.0
+ */
+
 package za.co.span;
 
 import java.util.ArrayList;
 
-public class CalculateRanking {
+public class CalculateRanking implements ICalculatePointsRanking {
     private int win = 3;
     private int draw = 1;
     private int loose = 0;
@@ -19,6 +24,7 @@ public class CalculateRanking {
        if a match is played and the score is the same we shall set the points to draw equivalent to 1 point
        else 1 team loose and 1 team wins
      */
+    @Override
     public void calculatePoints(String name1,int goal1, String name2, int goal2) {
 
         if (team1.setGoals(goal1) == team2.setGoals(goal2)){
@@ -26,8 +32,6 @@ public class CalculateRanking {
             team2.setName(name2);
             team1.setPoints(draw);
             team2.setPoints(draw);
-
-
 
         }
         else if (team1.setGoals(goal1) < team2.setGoals(goal2)){
@@ -46,7 +50,6 @@ public class CalculateRanking {
         }
 
     }
-
 
 
     public ArrayList<Teams> addingTeamsPointToList(){

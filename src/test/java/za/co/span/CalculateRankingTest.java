@@ -15,10 +15,14 @@ class CalculateRankingTest {
 
     @BeforeEach
     void setUp() {
+        if(team1.getClass() == null || team2.getClass() == null) return;
+
+
     }
 
-    @AfterEach
-    void tearDown() {
+    @Test
+    void testIdentity() {
+        assertNotSame(team1,team2,"Cannot have same team for a match");
     }
 
 
