@@ -7,7 +7,7 @@
 #DO NOT MODIFY
 function RUNNING_CHECK() {
 # its always good having running checks to maintain computer resources
-  pgrep -x run.sh >/dev/null && echo "Process found" || echo "Process not found"
+  pgrep -x setup_maven.sh >/dev/null && echo "Process found" || echo "Process not found"
 
 }
 
